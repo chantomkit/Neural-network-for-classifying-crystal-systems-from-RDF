@@ -1,3 +1,6 @@
-Upon modification of the MNIST neural network, this neural network try to learn distinguishing different crystal system from given RDF.
-The training_data.npy consists of ~7000 sets of RDF (features) and its designated crystal system (label).
-ULTIMATE GOAL: To increase the accuracy in testing samples, and to generalize in to classifying space groups from RDF.
+Upon modification of the MNIST neural network, this neural network try to learn distinguishing different crystal system (out of 7 in total) from given RDF.
+Firstly, I have used another algoritm (RDF generator) to extract information from the given structure.vasp file, and generate their respective RDF (features).
+Secondly, the generated RDF (features) and its respective crystal system (labels) are put inside a tensor and store in a training_data.npy file.
+Thirdly, the neural network (4 layers, fully connected) is trained by that given file.
+The training_data.npy consists of ~7000 sets of RDF (features) and its designated crystal system (labels).
+ULTIMATE GOAL: To increase the accuracy in testing samples, and to generalize in to classifying space groups (out of 230 in total) from RDF.
