@@ -14,5 +14,5 @@ input_analysis.py is for statisitical analysis of the input dataset
 
 # 14-10-2020
 FINAL RESULT:
-Convolutional Neural Network is used for this problem. Upon test and trial (brute force), the overall accuracy is around 74%, which 1: Triclinic and Monoclinic are very confused; 2: Some classes also confuse with monoclinic
+Convolutional Neural Network with 5-fold cross validation is used for this problem. Upon test and trial (brute force), the overall accuracy is around 74%, which 1: Triclinic and Monoclinic are very confused; 2: Some classes also confuse with monoclinic
 Some figures are attached for the accuracy result and dataset analysis
