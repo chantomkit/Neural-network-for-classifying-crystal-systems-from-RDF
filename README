@@ -1,3 +1,4 @@
+CUHK PHYSICS SUMMER INTERNSHIP PROGRAM: 
 This neural network project try to learn distinguishing different crystal system (out of 7 in total) from given RDF.
 Firstly, I have used another algoritm (RDF generator) to extract information from the given structure.vasp file, and generate their respective RDF (features).
 Secondly, the generated RDF (features) and its respective crystal system (labels) are put inside a tensor and store in a training_data.npy file.
