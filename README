@@ -1,6 +1,18 @@
-Upon modification of the MNIST neural network, this neural network try to learn distinguishing different crystal system (out of 7 in total) from given RDF.
+This neural network project try to learn distinguishing different crystal system (out of 7 in total) from given RDF.
 Firstly, I have used another algoritm (RDF generator) to extract information from the given structure.vasp file, and generate their respective RDF (features).
 Secondly, the generated RDF (features) and its respective crystal system (labels) are put inside a tensor and store in a training_data.npy file.
 Thirdly, the neural network (4 layers, fully connected) is trained by that given file.
 The training_data.npy consists of ~7000 sets of RDF (features) and its designated crystal system (labels).
 ULTIMATE GOAL: To increase the accuracy in testing samples, and to generalize in to classifying space groups (out of 230 in total) from RDF.
+
+-----
+
+training_data_packing.py is for data balancing
+input_analysis.py is for statisitical analysis of the input dataset
+
+-----
+
+# 14-10-2020
+FINAL RESULT:
+Convolutional Neural Network is used for this problem. Upon test and trial (brute force), the overall accuracy is around 74%, which 1: Triclinic and Monoclinic are very confused; 2: Some classes also confuse with monoclinic
+Some figures are attached for the accuracy result and dataset analysis
